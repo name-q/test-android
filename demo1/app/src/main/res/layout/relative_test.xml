@@ -1,6 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textSize="30sp"
+        android:text="水平垂直居中"
+        android:background="#ff0000"
+        android:layout_centerInParent="true"
+        android:id="@+id/center"
+    />
+
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_centerVertical="true"-->
+
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_alignParentRight="true"-->
+    <!--        android:layout_alignParentTop="true"-->
+    <!--        android:layout_alignParentLeft="true"-->
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textSize="30sp"
+        android:text="相对左上角"
+        android:background="#00ff00"
+        android:layout_above="@+id/center"
+        android:layout_toLeftOf="@+id/center"
+    />
+
+    <!--        android:layout_below="@+id/center"-->
+    <!--        android:layout_toRightOf="@+id/center"-->
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textSize="30sp"
+        android:text="相对右上角"
+        android:background="#00ff00"
+        android:layout_above="@+id/center"
+        android:layout_toRightOf="@+id/center"
+    />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textSize="30sp"
+        android:text="相对左下角"
+        android:background="#00ff00"
+        android:layout_below="@+id/center"
+        android:layout_toLeftOf="@+id/center"
+    />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textSize="30sp"
+        android:text="相对右下角"
+        android:background="#00ff00"
+        android:layout_below="@+id/center"
+        android:layout_toRightOf="@+id/center"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/center"
+        android:background="#0000ff"
+        android:text="简单相对"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
 
 </RelativeLayout>
